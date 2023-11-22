@@ -28,13 +28,13 @@
 }
 
 .navBar > div:nth-child(2) {
-  width: 170px;
+  width: 155px;
   cursor: pointer;
 }
 
 .navBar > div:nth-child(2) > div {
-  width: 45px;
-  height: 45px;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 45px;
   background-color: #fff;
 }
@@ -66,15 +66,15 @@
   font-weight: 900;
 }
 
+.presentationContainer > p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
 .presentationContainer > p > b {
   border-bottom: solid #3d9add;
   font-weight: 400;
   border-width: 0.1rem;
-}
-
-.presentationContainer > p {
-  font-size: 1rem;
-  font-weight: 400;
 }
 
 /* Contact Styles "contact" */
@@ -93,6 +93,7 @@
 
 .contact > div > a {
   margin-bottom: 18px;
+  font-size: 1rem;
 }
 
 /* Footer Styles "footer" */
