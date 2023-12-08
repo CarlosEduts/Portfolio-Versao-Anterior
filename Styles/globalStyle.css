@@ -50,7 +50,7 @@
 
 .presentationContainer {
   width: 100%;
-  height: calc(100vh - 315px);
+  height: calc(100dvh - 315px);
   flex-direction: column;
   text-align: center;
 }
