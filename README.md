@@ -11,8 +11,3 @@ Agradeço pela sua atenção e espero que goste do que verá!
 Atenciosamente,
 Carlos Eduardo.
 
-<br>
-
-# Imagen Relacionada
-
-<img src="./Images/WebSite/DesktopVersion.jpeg" style="width: 500px" />
