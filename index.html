@@ -5,117 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Carlos, desenvolvedor apaixonado. 
-    Explore meu currículo e encontre maneiras de nos conectarmos."
+      content="Carlos, desenvolvedor Front-end. Explore meu currículo e encontre maneiras de nos conectarmos."
     />
     <title>Carlos Eduardo - Designer & Desenvolvedor Front-end</title>
+    <link rel="shortcut icon" href="./Icon/image.png" type="image/x-icon" />
     <link
-      rel="shortcut icon"
-      href="./Images/Logo/LogoJPG.jpg"
-      type="image/x-icon"
+      href="https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
     />
-
-    <!-- Link: Style Font(Google Fonts) -->
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
-    </style>
-
-    <!-- Link: Script .JS -->
-    <script src="./Script/index.js" defer></script>
-
-    <!-- Links: Styles .CSS -->
-    <link rel="stylesheet" href="./Styles/backgroundAnimation.css" />
-    <link rel="stylesheet" href="./Styles/globalStyle.css" />
-    <link rel="stylesheet" href="./Styles/format.css" />
+    <link rel="stylesheet" href="./Styles/index.css" />
+    <script src="./Scripts/index.js" defer></script>
   </head>
   <body>
-    <div class="background">
-      <div class="navBar">
-        <div></div>
-        <div onclick="openCurriculum()">
-          <p>Ver Currículo</p>
+    <div class="container">
+      <header class="navBar">
+        <div onclick="display('.home')"><h2>CA</h2></div>
+        <nav>
+          <a href="https://www.instagram.com/carloseduti" target="_blank">IN</a>
+          <a href="https://github.com/CarlosEduts" target="_blank">GH</a>
+          <a href="https://www.linkedin.com/in/carlosedutis" target="_blank"
+            >LI</a
+          >
+        </nav>
+      </header>
+      <main class="presentationContainer">
+        <div class="desktopMenu">
+          <button onclick="display('.about')">SOBRE MIM</button>
+          <br />
+          <button onclick="display('.projects')">PROJETOS</button>
+          <br />
+          <button onclick="display('.skills')">HABILIDADES</button>
+          <br />
+          <button onclick="display('.contact')">CONTATO</button>
+        </div>
+        <div class="content home">
           <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="13"
-              height="13"
-              viewBox="0 0 15 13"
-              fill="none"
-            >
-              <path
-                d="M14.0537 2.06972C14.0922 1.62958 13.7666 1.24155 13.3264 1.20304L6.15383 0.57552C5.71369 0.537013 5.32566 0.862605 5.28715 1.30275C5.24865 1.7429 5.57424 2.13092 6.01438 2.16943L12.39 2.72723L11.8322 9.10287C11.7937 9.54302 12.1193 9.93105 12.5595 9.96956C12.9996 10.0081 13.3876 9.68247 13.4261 9.24232L14.0537 2.06972ZM1.51423 12.8974L13.7709 2.61283L12.7425 1.38716L0.48577 11.6718L1.51423 12.8974Z"
-                fill="#0A0A0A"
-              />
-            </svg>
+            <h1>
+              Olá, eu sou <br />
+              Carlos Eduardo.
+            </h1>
+            <p>
+              Sou um desenvolvedor front-end apaixonado por brincar com pixels e
+              cores. Minha missão é criar interfaces que surpreendam e inspirem.
+              Vamos inovar juntos na web!
+            </p>
+          </div>
+          <div class="mobileMenu">
+            <button onclick="display('.about')">SOBRE MIM</button>
+            <button onclick="display('.projects')">PROJETOS</button>
+            <br />
+            <button onclick="display('.skills')">HABILIDADES</button>
+            <button onclick="display('.contact')">CONTATO</button>
           </div>
         </div>
-      </div>
-      <div class="presentationContainer">
-        <h1>
-          Ei, eu sou <b>Carlos Eduardo</b>, <br />
-          designer e desenvolvedor <br />
-          front-end.
-        </h1>
-        <p>
-          E aí! Sou <b>Carlos Eduardo</b>, um dev front-end que <br />
-          adora brincar com pixels e cores. Minha missão é <br />
-          criar interfaces que surpreendam e inspirem. <br />
-          Vamos juntos inovar na web!
-        </p>
-      </div>
-      <div class="contact">
-        <div>
-          <a href="https://github.com/CarlosEduts"
-            >GitHub
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="10"
-              height="8"
-              viewBox="0 0 10 8"
-              fill="none"
-            >
-              <path
-                d="M9.15854 1.04356C9.18261 0.768466 8.97911 0.52595 8.70402 0.501882L4.22115 0.109682C3.94605 0.0856146 3.70354 0.28911 3.67947 0.564201C3.6554 0.839293 3.8589 1.08181 4.13399 1.10588L8.11877 1.4545L7.77015 5.43928C7.74608 5.71437 7.94957 5.95689 8.22467 5.98095C8.49976 6.00502 8.74227 5.80153 8.76634 5.52643L9.15854 1.04356ZM1.32139 7.81088L8.98184 1.383L8.33905 0.616958L0.678606 7.04483L1.32139 7.81088Z"
-                fill="white"
-              />
-            </svg>
-          </a>
-          <a href="https://www.linkedin.com/in/carlosedutis"
-            >LinkedIn
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="10"
-              height="8"
-              viewBox="0 0 10 8"
-              fill="none"
-            >
-              <path
-                d="M9.15854 1.04356C9.18261 0.768466 8.97911 0.52595 8.70402 0.501882L4.22115 0.109682C3.94605 0.0856146 3.70354 0.28911 3.67947 0.564201C3.6554 0.839293 3.8589 1.08181 4.13399 1.10588L8.11877 1.4545L7.77015 5.43928C7.74608 5.71437 7.94957 5.95689 8.22467 5.98095C8.49976 6.00502 8.74227 5.80153 8.76634 5.52643L9.15854 1.04356ZM1.32139 7.81088L8.98184 1.383L8.33905 0.616958L0.678606 7.04483L1.32139 7.81088Z"
-                fill="white"
-              />
-            </svg>
-          </a>
-          <a href="https://www.instagram.com/carloseduti"
-            >Instagram
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="10"
-              height="8"
-              viewBox="0 0 10 8"
-              fill="none"
-            >
-              <path
-                d="M9.15854 1.04356C9.18261 0.768466 8.97911 0.52595 8.70402 0.501882L4.22115 0.109682C3.94605 0.0856146 3.70354 0.28911 3.67947 0.564201C3.6554 0.839293 3.8589 1.08181 4.13399 1.10588L8.11877 1.4545L7.77015 5.43928C7.74608 5.71437 7.94957 5.95689 8.22467 5.98095C8.49976 6.00502 8.74227 5.80153 8.76634 5.52643L9.15854 1.04356ZM1.32139 7.81088L8.98184 1.383L8.33905 0.616958L0.678606 7.04483L1.32139 7.81088Z"
-                fill="white"
-              />
-            </svg>
-          </a>
+        <div class="content about">
+          <div>
+            <h1>Sobre mim</h1>
+            <p>
+              Sou um jovem Desenvolvedor Front-end com foco em tecnologias como
+              JavaScript, HTML, CSS e React. Atuo como Freelancer, demonstrando
+              habilidades não apenas em programação, mas também em design.
+            </p>
+          </div>
+          <button class="mobileMenu" onclick="display('.home')">VOLTAR</button>
         </div>
-      </div>
-      <div class="footer">
-        <p>©2023 - Feito por Carlos</p>
-        <button onclick="openEmail()">E-mail</button>
-      </div>
+        <div class="content projects">
+          <div>
+            <h1>Projetos</h1>
+            <p>
+              Landing Page - Vianna Heir Design: Desenvolvimento de uma página
+              de vendas para um curso de cabelo.
+              <a
+                href="https://github.com/CarlosEduts/Vianna-Hair-Designer-Curso"
+                target="_blank"
+                >Explore mais!</a
+              >
+            </p>
+          </div>
+          <button class="mobileMenu" onclick="display('.home')">VOLTAR</button>
+        </div>
+        <div class="content skills">
+          <div>
+            <h1>Habilidades</h1>
+            <p>
+              Front-End: HTML, CSS, JavaScript, ReactJS. <br />
+              <br />
+              Design: Design responsivo, Design intuitivo e amigável,
+              Acessibilidade, Princípios de design UX/UI. <br />
+              <br />
+              Back-End (básico): Node.js, ExpressJS, MongoDB.
+            </p>
+          </div>
+          <button class="mobileMenu" onclick="display('.home')">VOLTAR</button>
+        </div>
+        <div class="content contact">
+          <div>
+            <h1>Contato</h1>
+            <p>
+              Fique à vontade para me enviar uma mensagem! Estou sempre aberto a
+              novas oportunidades e colaborações.
+              <br />
+              <br />
+              Instagram:
+              <a href="https://www.instagram.com/carloseduti" target="_blank"
+                >@carloseduti
+              </a>
+              <br />
+              Portfólio online:
+              <a href="https://carlosdev.xyz/" target="_blank">carlosdev.xyz</a>
+              <br />
+              GitHub:
+              <a href="https://github.com/CarlosEduts" target="_blank"
+                >@CarlosEduts</a
+              >
+              <br />
+              LinkedIn:
+              <a href="https://www.linkedin.com/in/carlosedutis" target="_blank"
+                >@carlosedutis</a
+              >
+            </p>
+          </div>
+          <button class="mobileMenu" onclick="display('.home')">VOLTAR</button>
+        </div>
+        <div class="content timeMachine">
+          <div>
+            <h1>Maquina do Tempo</h1>
+            <a href="./Versions/v1.0/index.html" target="_blank">v1.0</a>
+          </div>
+          <button class="mobileMenu" onclick="display('.home')">VOLTAR</button>
+        </div>
+      </main>
+      <footer class="footer">
+        <p>&copy 2024 / Carlos.</p>
+        <div>
+          <button onclick="themeButton()">TEMA</button>
+          <button onclick="display('.timeMachine')">v2.0</button>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

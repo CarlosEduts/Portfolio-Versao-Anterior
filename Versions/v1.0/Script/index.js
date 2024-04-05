@@ -1,5 +1,5 @@
 const openCurriculum = () => {
-    window.open('../CurriculumVitae/CurriculumVitae - Carlos Eduardo.pdf')
+    window.open('./CurriculumVitae/CurriculumVitaeCarlosEduardo.pdf')
 }
 
 const openEmail = () => {
