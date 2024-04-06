@@ -186,6 +186,21 @@ p {
 
 /* Animation */
 
+.desktopMenu button:hover {
+  margin-left: 5px;
+  animation: marginAnim 0.3s 1 ease-in;
+}
+
+@keyframes marginAnim {
+  0% {
+    margin-left: 0px;
+  }
+
+  100% {
+    margin-left: 5px;
+  }
+}
+
 @keyframes appearAnim {
   0% {
     opacity: 0;
