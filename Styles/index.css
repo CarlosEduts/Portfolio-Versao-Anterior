@@ -63,7 +63,7 @@ a {
 
 .navBar {
   width: 100%;
-  height: 110px;
+  height: 100px;
   padding: 0 10%;
   animation: appearAnim 1s 1 ease-in;
 }
@@ -75,7 +75,7 @@ a {
   justify-content: center;
   padding: 0 10%;
   width: 100%;
-  height: calc(100dvh - 190px);
+  height: calc(100dvh - 180px);
   flex-direction: column;
   animation: appearAnim 2s 1 ease-in;
 }
@@ -99,8 +99,10 @@ p {
   margin: 1rem 1rem 0rem 0rem;
   width: 100px;
   border: none;
-  font-weight: 400;
+  font-weight: 300;
   background: none;
+  border-left: 0.5px solid var(--secondary-color);
+  padding-left: 0.4rem;
   text-align: left;
   cursor: pointer;
 }
@@ -130,6 +132,7 @@ p {
   background: none;
   margin-left: 0.7rem;
   cursor: pointer;
+  font-weight: 300;
 }
 
 /* Page404 Styles ".page404" */
@@ -145,7 +148,11 @@ p {
   animation: appearAnim 0.2s 1 ease-in;
 }
 
-.darkTheme button,
+.darkTheme button {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
 .darkTheme a {
   color: var(--primary-color);
 }
