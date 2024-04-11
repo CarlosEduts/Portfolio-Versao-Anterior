@@ -69,7 +69,7 @@ a {
 }
 
 /* Presentation container styles ".presentationContainer" */
-.page404,
+
 .presentationContainer {
   display: flex;
   justify-content: center;
@@ -133,11 +133,6 @@ p {
   margin-left: 0.7rem;
   cursor: pointer;
   font-weight: 300;
-}
-
-/* Page404 Styles ".page404" */
-.page404 {
-  height: 100dvh;
 }
 
 /* Theme: Dark */
