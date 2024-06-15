@@ -1,13 +1,13 @@
 # Portfólio de Carlos
 
-### Olá!
+### Olá 👋
 
-Gostaria de convidá-lo(a) a dar uma olhada no meu portfólio de front-end. Nele, você encontrará uma seleção dos meus trabalhos e projetos, demonstrando minhas habilidades e paixão pela área.
+Seja bem-vindo(a) ao meu portfólio de front-end! Aqui você encontrará uma cuidadosa seleção dos meus projetos, cada um demonstrando minha dedicação e habilidades na área de desenvolvimento front-end.
 
-Para acessar o meu portfólio, basta visitar <a href="https://carlosdev.xyz/">carlos.xyz</a>. Ficarei feliz em receber seu feedback ou responder a qualquer pergunta que você possa ter.
+## Visite meu Portfólio 🌐
 
-Agradeço pela sua atenção e espero que goste do que verá!
+Para conferir todos os detalhes dos meus projetos, visite [CarlosDev.xyz](https://carlosdev.xyz/). Ficarei muito feliz em receber seu feedback ou responder qualquer pergunta que você possa ter sobre os projetos ou meu trabalho.
 
-Atenciosamente,
-Carlos Eduardo.
+Agradeço sinceramente pela sua atenção e espero que goste do que verá!
 
+Atenciosamente, [Carlos Eduardo](https://github.com/CarlosEduts).
