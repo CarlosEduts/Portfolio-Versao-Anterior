@@ -1,16 +1,23 @@
 const container = document.querySelector(".container");
+const themeButton = document.querySelector(".themeButton");
+const divs = document.querySelectorAll(".content");
 
-function themeButton() {
+themeButton.addEventListener("click", () => {
+  if (container.classList[1] == undefined) {
+    themeButton.innerText = "TEMA CLARO";
+  } else {
+    themeButton.innerText = "TEMA ESCURO";
+  }
+
   container.classList.toggle("darkTheme");
-}
+});
 
 function display(className) {
-  const divs = document.querySelectorAll(".content");
+  const content = document.querySelector(className);
   for (const div of divs) {
     div.style.display = "none";
   }
 
-  const content = document.querySelector(className);
   content.style.display = "block";
 }
 

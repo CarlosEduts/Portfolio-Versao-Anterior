@@ -9,22 +9,26 @@
     />
     <title>Carlos Eduardo - Designer & Desenvolvedor Front-end</title>
     <link rel="shortcut icon" href="./Icon/image.png" type="image/x-icon" />
+
+    <!-- Link: Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- Link: Google Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <!-- Link: Local .CSS -->
     <link rel="stylesheet" href="./Styles/index.css" />
-    <script src="./Scripts/index.js" defer></script>
   </head>
   <body>
     <div class="container">
       <header class="navBar noSelect">
         <div onclick="display('.home')"><h2>CA</h2></div>
-        <nav>
-          <a href="https://www.instagram.com/carloseduti" target="_blank">IN</a>
-          <a href="https://github.com/CarlosEduts" target="_blank">GH</a>
-          <a href="mailto:edutsilvs@gmail.com" target="_blank">EM</a>
-        </nav>
+        <button class="themeButton">TEMA ESCURO</button>
       </header>
       <main class="presentationContainer">
         <div class="desktopMenu">
@@ -159,11 +163,9 @@
       </main>
       <footer class="footer noSelect">
         <p>&copy 2024 / Carlos.</p>
-        <div>
-          <button onclick="themeButton()">TEMA</button>
-          <button onclick="display('.timeMachine')">v2.0</button>
-        </div>
+        <button onclick="display('.timeMachine')">v2.0</button>
       </footer>
     </div>
+    <script src="./Scripts/index.js"></script>
   </body>
 </html>

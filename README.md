@@ -1,10 +1,10 @@
 # Portfólio de Carlos
 
-### Olá 👋
+### 👋 Olá!
 
 Seja bem-vindo(a) ao meu portfólio de front-end! Aqui você encontrará uma cuidadosa seleção dos meus projetos, cada um demonstrando minha dedicação e habilidades na área de desenvolvimento front-end.
 
-## Visite meu Portfólio 🌐
+## 🌐 Visite meu Portfólio
 
 Para conferir todos os detalhes dos meus projetos, visite [CarlosDev.xyz](https://carlosdev.xyz/). Ficarei muito feliz em receber seu feedback ou responder qualquer pergunta que você possa ter sobre os projetos ou meu trabalho.
 

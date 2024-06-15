@@ -1,7 +1,9 @@
 /* Formatting */
 :root {
-  --primary-color: #faf8f8;
-  --secondary-color: #161618;
+  --light: #faf8f8;
+  --dark: #161618;
+  --light-green: #02735e;
+  --dark-green: #16584c;
 }
 
 * {
@@ -17,8 +19,8 @@ html {
 }
 
 body {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+  background-color: var(--light);
+  color: var(--dark);
 }
 
 /* Global Styles */
@@ -44,8 +46,9 @@ p {
 
 strong {
   font-weight: 500;
-  background-color: #16161818;
-  padding: 0 0.1rem;
+  color: var(--dark-green);
+  background-color: #124d4218;
+  padding: 0 0.15rem;
   border-radius: 0.2rem;
 }
 
@@ -54,7 +57,6 @@ a {
   font-weight: 500;
   text-decoration: none;
   color: #16161890;
-  padding-left: 1rem;
 }
 
 /* Container Styles ".container" */
@@ -84,6 +86,15 @@ a {
   animation: appearAnim 1s 1 ease-in;
 }
 
+.themeButton,
+.footer button {
+  border: none;
+  background: none;
+  margin-left: 0.7rem;
+  cursor: pointer;
+  font-weight: 300;
+}
+
 /* Presentation container styles ".presentationContainer" */
 .presentationContainer {
   display: flex;
@@ -96,7 +107,7 @@ a {
 }
 
 .content {
-  max-width: 345px;
+  max-width: 400px;
   animation: appearAnim 0.5s 1 ease-in;
 }
 
@@ -107,11 +118,11 @@ a {
 .desktopMenu button,
 .content button {
   margin: 1rem 1rem 0rem 0rem;
-  width: 100px;
+  width: 108px;
   border: none;
   font-weight: 400;
   background: none;
-  border-left: 0.8px solid var(--secondary-color);
+  border-left: 0.8px solid var(--dark);
   padding-left: 0.4rem;
   text-align: left;
   cursor: pointer;
@@ -119,12 +130,6 @@ a {
 
 .skills > div > p > strong {
   margin: 0.1rem;
-}
-
-.projects a,
-.contact a {
-  padding: 0.1rem;
-  font-style: italic;
 }
 
 /* Footer Styles "footer" */
@@ -140,14 +145,6 @@ a {
   font-size: 0.75rem;
 }
 
-.footer button {
-  border: none;
-  background: none;
-  margin-left: 0.7rem;
-  cursor: pointer;
-  font-weight: 300;
-}
-
 /* Responsiveness (Presentation container styles ".presentationContainer" )*/
 .desktopMenu {
   display: none;
@@ -155,26 +152,27 @@ a {
 
 /* Theme: Dark */
 .darkTheme {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
+  background-color: var(--dark);
+  color: var(--light);
   animation: appearAnim 0.2s 1 ease-in;
 }
 
 .darkTheme button {
-  color: var(--primary-color);
-  border-color: var(--primary-color);
+  color: var(--light);
+  border-color: var(--light);
 }
 
 .darkTheme a {
-  color: var(--primary-color);
+  color: var(--light);
 }
 
 .darkTheme strong {
-  background-color: #faf8f818;
+  color: var(--light-green);
+  background-color: #02735e22;
 }
 
 /* Desktops/Extra Large screens  */
-@media (940px <= width) {
+@media (width >= 940px) {
   .presentationContainer {
     align-items: center;
     flex-direction: row;
@@ -182,11 +180,12 @@ a {
 
   .desktopMenu {
     display: block;
+    width: 25%;
   }
 
-  .desktopMenu,
   .content {
-    width: 50%;
+    width: 75%;
+    max-width: 480px;
   }
 
   .mobileMenu {
