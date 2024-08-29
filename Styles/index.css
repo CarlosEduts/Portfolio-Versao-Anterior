@@ -1,6 +1,6 @@
-/* Formatting */
 @import url("https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+/* Root Variables */
 :root {
   --light: #faf8f8;
   --dark: #161618;
@@ -10,6 +10,7 @@
   --dark-gray: #1b1b1c;
 }
 
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +28,6 @@ body {
   color: var(--dark);
 }
 
-/* Global Styles */
 h1,
 h2 {
   font-family: "Monoton", sans-serif;
@@ -59,132 +59,57 @@ a {
   border-radius: 0.5rem;
   cursor: pointer;
   font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 24;
-}
-
-.material-symbols-outlined,
-.card {
   background-color: var(--off-white);
   border: 1px solid #00000015;
 }
 
-.noSelect {
-  -webkit-user-select: none; /* Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE 10+/Edge */
+.no-select {
   user-select: none;
 }
 
-/* Input Styles */
-input[type="radio"] {
-  cursor: pointer;
-  margin: 1rem 0.5rem;
-  width: 20px;
-  height: 20px;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  border: 2px solid var(--dark-green);
-  border-radius: 50%;
-  outline: none;
-}
-
-input[type="radio"]:checked {
-  background-color: var(--dark-green);
-}
-
-/* Container Styles ".container" */
+/* Container */
 .container {
   width: 100%;
 }
 
-/* Navigation Bar Styles ".navBar" */
-.projectsButton,
-.navBar,
-.footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.navBar {
+/* Navigation Bar */
+.nav-bar {
   width: 100%;
   height: 90px;
   padding: 0 10%;
-  animation: appearAnim 1s 1 ease-in;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation: appearAnim 1s ease-in;
 }
 
-/* Presentation container styles ".presentationContainer" */
-.presentationContainer {
+.actions > a {
+  margin-right: 0.3rem;
+  cursor: pointer;
+  color: var(--dark);
+}
+
+/* Section Content */
+.section-content {
   display: flex;
   justify-content: center;
   padding: 0 10%;
   width: 100%;
   height: calc(100dvh - 150px);
   flex-direction: column;
-  animation: appearAnim 2s 1 ease-in;
+  animation: appearAnim 2s ease-in;
 }
 
 .content {
   max-width: 400px;
-  animation: appearAnim 0.5s 1 ease-in;
+  animation: appearAnim 0.5s ease-in;
 }
 
-.presentationContainer > .home > div:nth-child(2) {
-  padding-top: 1.6rem;
-}
-
-.projects {
-  overflow-y: auto;
-  padding-right: 4px;
-}
-
-.projectsButton {
-  width: 100%;
-  max-width: 360px;
-  justify-content: center;
-}
-
-.card {
-  width: 100%;
-  max-width: 360px;
-  margin-top: 1.4rem;
-  padding: 1rem;
-  border-radius: 0.5rem;
-}
-
-.card > div {
-  width: 100%;
-  height: 10rem;
-  border-radius: 0.6rem;
-  margin-bottom: 0.3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.project-img01 {
-  background-color: #0a0a0a;
-  color: var(--light);
-  font-size: 3rem;
-  font-weight: 800;
-}
-
-.project-img02 {
-  background-image: url(../Images/Projects/Labirinto-Jogo.png);
-  background-size: 100%;
-  background-position: center;
-}
-
-.project-img03{
-  background-image: url(../Images/Projects/Cosmic-Invasion.png);
-  background-size: 100%;
-  background-position: center;
-}
-
-a,
-.desktopMenu button,
+.projects a,
+.section-content > a,
+.dt-menu button,
 .content button {
-  margin: 1rem 1rem 0rem 0rem;
+  margin: 1rem 1rem 0 0;
   width: 108px;
   border: none;
   font-weight: 400;
@@ -196,40 +121,153 @@ a,
   color: var(--dark);
 }
 
-.projects a {
+.section-content > .home > div:nth-child(2) {
+  padding-top: 1.6rem;
+}
+
+/* About Me */
+.profile-img {
+  background-image: url(../Images/Icon/profile-icon.jpg);
+  background-repeat: no-repeat;
+  background-size: 115%;
+  background-position: center;
+  border-radius: 50%;
+  border: 4px solid #00000015;
+  width: 5rem;
+  height: 5rem;
+}
+
+.about-me > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--off-white);
+  border: 1px solid #00000015;
+  width: 100%;
+  max-width: 340px;
+  margin-top: 0.3rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+/* Projects */
+.projects {
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.projects-nav {
+  display: flex;
+  width: 100%;
+  max-width: 360px;
+  justify-content: center;
+}
+
+.project-box {
+  width: 100%;
+  max-width: 335px;
+  margin-top: 0.3rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-size: cover;
+  background-position: center;
+}
+
+input[type="radio"] {
+  cursor: pointer;
+  margin: 1rem 0.5rem;
+  width: 20px;
+  height: 20px;
+  appearance: none;
+  border: 2px solid var(--dark-green);
+  border-radius: 50%;
+  outline: none;
+}
+
+input[type="radio"]:checked {
+  background-color: var(--dark-green);
+}
+
+.project01 {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url(../Images/Projects/VNN.png);
+}
+
+.project02 {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url(../Images/Projects/labirinto-jogo.png);
+}
+
+.project03 {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url(../Images/Projects/cosmic-invasion.gif);
+}
+
+.project-box {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.project-box > p {
+  color: var(--light);
+  padding-top: 15rem;
+  padding-bottom: 0.2rem;
+}
+
+.project-box > a {
   font-size: 0.8rem;
+  color: var(--light);
+  border-color: var(--light);
 }
 
-.skills > div > p > strong {
-  margin: 0.1rem;
+/* Contact */
+.contact a {
+  color: var(--dark);
 }
 
-/* Footer Styles "footer" */
+/* Footer */
 .footer {
   width: 100%;
   height: 60px;
   padding: 0 10%;
-  animation: appearAnim 1s 1 ease-in;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation: appearAnim 1s ease-in;
 }
 
 .footer > p {
-  padding: 0;
   font-size: 0.75rem;
 }
 
 .footer button {
+  margin-left: 0.7rem;
   border: none;
   background: none;
-  margin-left: 0.7rem;
   cursor: pointer;
   font-weight: 300;
 }
 
-/* Theme: Dark */
+/* Dark Theme */
 .darkTheme {
   background-color: var(--dark);
   color: var(--light);
-  animation: appearAnim 0.2s 1 ease-in;
+  animation: appearAnim 0.2s ease-in;
 }
 
 .darkTheme a,
@@ -243,7 +281,8 @@ a,
   background-color: #02735e22;
 }
 
-.darkTheme .card,
+.darkTheme .about-me > div,
+.darkTheme .project-box,
 .darkTheme .material-symbols-outlined {
   background-color: var(--dark-gray);
   border: 1px solid #99999915;
@@ -257,19 +296,18 @@ a,
   background-color: var(--light-green);
 }
 
-/* Responsiveness (Presentation container styles ".presentationContainer" )*/
-.desktopMenu {
+/* Desktop/Extra Large Screens */
+.dt-menu {
   display: none;
 }
 
-/* Desktops/Extra Large screens  */
-@media (width >= 940px) {
-  .presentationContainer {
+@media (min-width: 940px) {
+  .section-content {
     align-items: center;
     flex-direction: row;
   }
 
-  .desktopMenu {
+  .dt-menu {
     display: block;
     width: 25%;
   }
@@ -278,20 +316,20 @@ a,
     width: 75%;
   }
 
-  .mobileMenu {
+  .mb-menu {
     display: none;
   }
 }
 
-/* Animation */
-.desktopMenu button:hover {
+/* Animations */
+.dt-menu button:hover {
   margin-left: 5px;
-  animation: marginAnim 0.3s 1 ease-in;
+  animation: marginAnim 0.3s ease-in;
 }
 
 @keyframes marginAnim {
   0% {
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   100% {

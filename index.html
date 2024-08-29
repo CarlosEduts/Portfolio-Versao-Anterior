@@ -3,39 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carlos Eduardo - Designer & Desenvolvedor Front-end</title>
     <meta
       name="description"
-      content="Carlos, desenvolvedor Front-end. Explore meu currículo e encontre maneiras de nos conectarmos."
+      content="Carlos, desenvolvedor Front-end. Explore meu portfólio."
     />
-    <title>Carlos Eduardo - Designer & Desenvolvedor Front-end</title>
+
     <link
       rel="shortcut icon"
-      href="./Images/Icon/image.png"
+      href="./Images/Icon/page-icon.png"
       type="image/x-icon"
     />
+
+    <!-- Link: Google icons -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+
+    <!-- Link: CSS -->
     <link rel="stylesheet" href="./Styles/index.css" />
   </head>
   <body>
     <div class="container">
-      <header class="navBar noSelect">
-        <div onclick="display('.home')"><h2>CA</h2></div>
-        <span class="material-symbols-outlined themeButton"> dark_mode </span>
-      </header>
-      <main class="presentationContainer">
-        <div class="desktopMenu">
-          <button onclick="display('.about')">SOBRE MIM</button>
-          <br />
-          <button onclick="display('.projects')">PROJETOS</button>
-          <br />
-          <button onclick="display('.skills')">HABILIDADES</button>
-          <br />
+      <nav class="nav-bar no-select">
+        <div onclick="display('.home')">
+          <h2>CA</h2>
+        </div>
+        <div class="actions">
+          <a href="" title="Currículo">
+            <span class="material-symbols-outlined">description</span>
+          </a>
+          <a href="mailto:cedut.dev@gmail.com" title="E-mail">
+            <span class="material-symbols-outlined">email</span>
+          </a>
+          <span class="material-symbols-outlined mode-button" title="Tema">
+            dark_mode
+          </span>
+        </div>
+      </nav>
+
+      <section class="section-content">
+        <!-- Menu para telas grandes -->
+        <div class="dt-menu">
+          <button onclick="display('.about-me')">SOBRE MIM</button><br />
+          <button onclick="display('.projects')">PROJETOS</button><br />
+          <button onclick="display('.skills')">HABILIDADES</button><br />
           <button onclick="display('.contact')">CONTATO</button>
         </div>
-        <div class="content home">
+
+        <div class="home content">
           <div>
             <h1>
               Olá, eu sou <br />
@@ -43,88 +60,82 @@
             </h1>
             <p>
               Sou um <strong>desenvolvedor Front-end</strong> apaixonado por
-              brincar com pixels e cores. Minha missão é criar interfaces que
-              surpreendam e inspirem. Vamos inovar juntos na web!
+              brincar com pixels e cores. Meu objetivo é transformar ideias em
+              soluções digitais inspiradoras e inovadoras.
             </p>
           </div>
-          <div class="mobileMenu">
-            <button onclick="display('.about')">SOBRE MIM</button>
-            <button onclick="display('.projects')">PROJETOS</button>
-            <br />
+          <div class="mb-menu">
+            <button onclick="display('.about-me')">SOBRE MIM</button>
+            <button onclick="display('.projects')">PROJETOS</button><br />
             <button onclick="display('.skills')">HABILIDADES</button>
             <button onclick="display('.contact')">CONTATO</button>
           </div>
         </div>
-        <div class="content about">
+
+        <div class="content about-me">
+          <h1>Sobre mim</h1>
           <div>
-            <h1>Sobre mim</h1>
+            <div class="profile-img"></div>
             <p>
-              Eu sou o <strong>Carlos Eduardo</strong> e comecei a programar aos
+              Eu sou <strong>Carlos Eduardo</strong> e comecei a programar aos
               14 anos. Gosto de acompanhar as últimas tendências e tecnologias
-              para aprimorar os projetos em que trabalho. Meu foco é criar
-              experiências que conectem com as pessoas. Estou sempre aprendendo
-              e buscando novos desafios, o que mantém meu entusiasmo pela
-              programação.
+              para aprimorar os projetos em que trabalho. Estou sempre
+              aprendendo e buscando novos desafios, o que mantém meu entusiasmo
+              pela programação.
             </p>
           </div>
-          <button class="mobileMenu" onclick="display('.home')">VOLTAR</button>
+          <button class="mb-menu" onclick="display('.home')">VOLTAR</button>
         </div>
+
         <div class="content projects">
           <div>
             <h1>Projetos</h1>
-            <div class="card project01 projectContent">
-              <div class="project-img01">VNN</div>
+
+            <div class="project01 project-box">
               <p>
-                <strong>Vianna Heir Design:</strong>
-                Landing Page de vendas para um curso de cabelo.
-                <br />
-                <br />
-                <a
-                  href="https://github.com/CarlosEduts/Vianna-Hair-Designer-Curso"
-                  target="_blank"
-                  >CÓDIGO-FONTE</a
-                >
+                Vianna Heir Design: Landing Page de vendas para um curso de
+                cabelo.
               </p>
+              <a
+                href="https://github.com/CarlosEduts/Vianna-Hair-Designer-Curso"
+                target="_blank"
+                >CÓDIGO-FONTE</a
+              >
             </div>
-            <div class="card project02 projectContent">
-              <div class="project-img02"></div>
+
+            <div class="card project02 project-box">
               <p>
-                <strong>Jogo de Labirinto:</strong>
-                Desenvolvido com JavaScript, HTML, CSS, Express.js e Socket.io.
-                <br />
-                <br />
-                <a
-                  href="https://carloseduts.github.io/Labirinto-Jogo/"
-                  target="_blank"
-                  >DEPLOY</a
-                >
-                <a
-                  href="https://github.com/CarlosEduts/Labirinto-Jogo"
-                  target="_blank"
-                  >CÓDIGO-FONTE</a
-                >
+                Jogo de Labirinto: Desenvolvido com JavaScript, HTML, CSS,
+                Express.js e Socket.io.
               </p>
+              <a
+                href="https://carloseduts.github.io/Labirinto-Jogo/"
+                target="_blank"
+                >DEPLOY</a
+              >
+              <a
+                href="https://github.com/CarlosEduts/Labirinto-Jogo"
+                target="_blank"
+                >CÓDIGO-FONTE</a
+              >
             </div>
-            <div class="card project03 projectContent">
-              <div class="project-img03"></div>
+
+            <div class="card project03 project-box">
               <p>
-                <strong>Cosmic Invasion:</strong>
-                Desenvolvido com Node.js, JavaScript, HTML, CSS, Express.js e Socket.io.
-                <br />
-                <br />
-                <a
-                  href="https://cosmicinvasion.onrender.com/"
-                  target="_blank"
-                  >DEPLOY</a
-                >
-                <a
-                  href="https://github.com/CarlosEduts/Cosmic-Invasion"
-                  target="_blank"
-                  >CÓDIGO-FONTE</a
-                >
+                Cosmic Invasion: Desenvolvido com Node.js, JavaScript, HTML,
+                CSS, Express.js e Socket.io.
               </p>
+              <a href="https://cosmicinvasion.onrender.com/" target="_blank"
+                >DEPLOY</a
+              >
+              <a
+                href="https://github.com/CarlosEduts/Cosmic-Invasion"
+                target="_blank"
+                >CÓDIGO-FONTE</a
+              >
             </div>
-            <div class="projectsButton noSelect">
+
+            <div class="projects-nav no-select">
               <form action="">
                 <input
                   type="radio"
@@ -138,74 +149,67 @@
                   onclick="displayProjects('.project02')"
                 />
                 <input
-                type="radio"
-                name="project"
-                onclick="displayProjects('.project03')"
-              />
+                  type="radio"
+                  name="project"
+                  onclick="displayProjects('.project03')"
+                />
               </form>
             </div>
           </div>
-          <button class="mobileMenu" onclick="display('.home')">VOLTAR</button>
+          <button class="mb-menu" onclick="display('.home')">VOLTAR</button>
         </div>
+
         <div class="content skills">
           <div>
             <h1>Habilidades</h1>
-            <p>
-              Front-End:
-              <strong>HTML</strong>
-              <strong>CSS</strong>
-              <strong>JavaScript</strong>
-              <strong>ReactJS</strong>
-              <br />
-              <br />
-              Design:
-              <strong>Design responsivo</strong>
-              <strong>Design intuitivo e amigável</strong>
-              <strong>Acessibilidade</strong>
-              <strong>Princípios de design UX/UI</strong>
-              <br />
-              <br />
-              Back-End (básico):
-              <strong>Node.js</strong>
-              <strong>ExpressJS</strong>
-              <strong>MongoDB</strong>
-            </p>
+            <div class="skills-box">
+              <div>JavaScript</div>
+              <div>PHP</div>
+              <div>Node.js</div>
+              <div>ReactJS</div>
+              <div>Design responsivo</div>
+              <div>Design intuitivo</div>
+            </div>
           </div>
-          <button class="mobileMenu" onclick="display('.home')">VOLTAR</button>
+          <button class="mb-menu" onclick="display('.home')">VOLTAR</button>
         </div>
+
         <div class="content contact">
           <div>
             <h1>Contato</h1>
             <p>
-              Fique à vontade para me enviar uma mensagem! Estou sempre aberto a
-              novas oportunidades e colaborações.
+              Sinta-se à vontade para entrar em contato! Estou sempre aberto a
+              novas oportunidades e colaborações. Não deixe de conferir também o
+              meu currículo!
             </p>
             <br />
             <a href="https://www.instagram.com/carloseduti" target="_blank"
               >Instagram</a
-            >
-            <br />
-            <a href="mailto:edutsilvs@gmail.com" target="_blank">E-mail</a>
-            <br />
-            <a href="https://github.com/CarlosEduts" target="_blank">GitHub</a>
-            <br />
+            ><br />
+            <a href="mailto:cedut.dev@gmail.com" target="_blank">E-mail</a
+            ><br />
+            <a href="https://github.com/CarlosEduts" target="_blank">GitHub</a
+            ><br />
             <a href="https://www.linkedin.com/in/carlosedutis" target="_blank"
               >LinkedIn</a
-            >
+            ><br /><br />
+            <a href="">Currículo em PDF</a>
           </div>
-          <button class="mobileMenu" onclick="display('.home')">VOLTAR</button>
+          <button class="mb-menu" onclick="display('.home')">VOLTAR</button>
         </div>
-        <div class="content timeMachine">
+
+        <div class="content time-machine">
           <div>
             <h1>Maquina do Tempo</h1>
             <a href="./Versions/v1.0/index.html" target="_blank">v1.0</a>
           </div>
-          <button class="mobileMenu" onclick="display('.home')">VOLTAR</button>
+          <button class="mb-menu" onclick="display('.home')">VOLTAR</button>
         </div>
-      </main>
-      <footer class="footer noSelect">
-        <p>&copy 2024 / Carlos.</p>
-        <button onclick="display('.timeMachine')">v2.2</button>
+      </section>
+
+      <footer class="footer no-select">
+        <p>&copy; 2024 / Carlos.</p>
+        <button onclick="display('.time-machine')">v2.2</button>
       </footer>
     </div>
     <script src="./Scripts/index.js"></script>

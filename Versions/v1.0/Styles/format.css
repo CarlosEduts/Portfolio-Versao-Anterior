@@ -13,54 +13,54 @@ html {
   font-size: 16px;
 }
 
-/* Responsiveness (Presentation container styles ".presentationContainer" )*/
+/* Responsiveness (Presentation container styles ".section-content" )*/
 
 /* Desktops/Extra Large screens  */
 @media (1200px <= width) {
-  .presentationContainer > h1 {
+  .section-content > h1 {
     font-size: 2.75rem;
   }
-  .presentationContainer > p {
+  .section-content > p {
     font-size: 1.15rem;
   }
 }
 
 /* Large tablets/laptops */
 @media (992px <= width <= 1199px) {
-  .presentationContainer > h1 {
+  .section-content > h1 {
     font-size: 2.47rem;
   }
-  .presentationContainer > p {
+  .section-content > p {
     font-size: 1.1rem;
   }
 }
 
 /* Small tablets */
 @media (768px <= width <= 991px) {
-  .presentationContainer > h1 {
+  .section-content > h1 {
     font-size: 2.22rem;
   }
-  .presentationContainer > p {
+  .section-content > p {
     font-size: 1.05rem;
   }
 }
 
 /* Extra small devices */
 @media (481px <= width <= 767px) {
-  .presentationContainer > h1 {
+  .section-content > h1 {
     font-size: 2rem;
   }
-  .presentationContainer > p {
+  .section-content > p {
     font-size: 1rem;
   }
 }
 
 /* Mobile */
 @media (281px <= width <= 480px) {
-  .presentationContainer > h1 {
+  .section-content > h1 {
     font-size: 1.8rem;
   }
-  .presentationContainer > p {
+  .section-content > p {
     font-size: 0.95rem;
   }
 }
@@ -70,10 +70,10 @@ html {
   html {
     font-size: 14px;
   }
-  .presentationContainer > h1 {
+  .section-content > h1 {
     font-size: 1.6rem;
   }
-  .presentationContainer > p {
+  .section-content > p {
     font-size: 0.9rem;
   }
 }

@@ -1,13 +1,13 @@
 const container = document.querySelector(".container");
-const themeButton = document.querySelector(".themeButton");
+const modeButton = document.querySelector(".mode-button");
 const divs = document.querySelectorAll(".content");
-const projectDivs = document.querySelectorAll(".projectContent");
+const projectDivs = document.querySelectorAll(".project-box");
 
-themeButton.addEventListener("click", () => {
+modeButton.addEventListener("click", () => {
   if (container.classList[1] == undefined) {
-    themeButton.innerText = "light_mode";
+    modeButton.innerText = "light_mode";
   } else {
-    themeButton.innerText = "dark_mode";
+    modeButton.innerText = "dark_mode";
   }
 
   container.classList.toggle("darkTheme");
